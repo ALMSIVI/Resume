@@ -1,0 +1,83 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{anyfontsize}
+\usepackage{tabularx, multirow, hyperref, titlesec, comment}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\begin{document}
+	\noindent
+	\begin{tabularx}{\linewidth}{X r}
+		\multirow{3}{*}{{\fontsize{45}{60}\selectfont Daniel Wu}}
+		& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
+		& (858) 666-5847 \\
+		& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI}
+	\end{tabularx}
+	
+\begin{comment} % Header including mailing address
+\begin{tabularx}{\linewidth}{X r}
+\multirow{4}{*}{{\fontsize{45}{60}\selectfont Yue Wu}} 
+& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
+& (858) 666-5847 \\
+& 8840 Costa Verde Blvd. Apt. 3322 \\
+& San Diego, CA 92122
+\end{tabularx}
+\end{comment}
+
+\bigskip
+
+\section{Education}
+\smallskip
+\noindent
+\begin{tabularx}{\linewidth}{l | X}	
+\texttt{Sep 2016 to} & \textbf{\large University of California, San Diego} \\
+\texttt{Jun 2020} & \textit{B.S. in Computer Science, Minor in Visual Arts: Computing and Arts} \\
+\texttt{(Expected)} & A sophomore student at Computer Science and Engineering department in UC San Diego. \textbf{(GPA: 3.88/4)} \\
+\texttt{Current} & Advanced Software Engineering, Interaction Design Programming \\
+\texttt{Courses}
+\end{tabularx}
+
+\bigskip
+
+\section{Experiences}
+\smallskip
+\noindent
+\begin{tabular}{l r}	
+\textbf{\large Mechsuit VR} {\small (WIP)} & \textit{Programmer and Tester} \\
+\multicolumn{2}{p{\linewidth}}{Worked in a 5-person team of the VR Club. Using HTC Vive and Unity, Mechsuit provides an arena to fight in mechanic armors. Implemented the inverse kinematic system for the armor with C\# and did VR testing.} \\
+\textbf{\large Music Manager} & \textit{Individual Developer} \\
+\multicolumn{2}{p{\linewidth}}{Using C\# and WPF framework, this Windows application can play music, manage music ID3 tags, and convert music formats.} \\
+\textbf{\large SMSEmail} & \textit{Designer and Programmer} \\
+\multicolumn{2}{p{\linewidth}}{A 3-person team project in SD Hacks 2017. Using Twilio API and Java Mail, built an app to receive and send emails using text messages only without the Internet. I handled the text analysis job.} \\
+\textbf{\large WayAround} & \textit{Designer and Programmer} \\
+\multicolumn{2}{p{\linewidth}}{A 4-person HCI design web application. This app is built for walkers who would like to explore their surroundings or to find a smoother, safer way, but not necessarily the faster one, to their destinations. Implemented the home page, where the user can customize the route via a variety of parameters, and the review page, where the user rates the route based on the previously chosen parameters.} \\
+\textbf{\large Flashback Music} & \textit{Designer and Programmer} \\
+\multicolumn{2}{p{\linewidth}}{A 5-person team software engineering project with Android. This app would record the location and time songs are played and allow users to reminisce of their time in flashback mode. I implemented the main UI and refactored the code to conform to various design patterns.}
+\end{tabular}
+
+\bigskip
+
+\section{Awards}
+\smallskip
+\noindent
+\begin{tabularx}{\linewidth}{r | X}
+	\texttt{June 2017} & 10th place at UCSD WIC Beginner's Programming Competition
+\end{tabularx}
+
+\bigskip
+
+\section{Skills}
+\smallskip
+\noindent
+\begin{tabularx}{\linewidth}{r X}
+	\texttt{Proficient:} & C\# (Unity and Windows), Java (Android), JavaScript (Node.js), C, \LaTeX \\
+	\texttt{Intermediate:} & C++, Python, HTML \& CSS
+\end{tabularx}
+
+\bigskip
+\section{Interests}
+\smallskip
+\noindent
+I love drawing illustrations about comics and games. I am also a huge fan of rock music. I am now studying Japanese to better understand Japanese anime culture and their way of drawing.
+\end{document}
