@@ -1,10 +1,14 @@
-\documentclass[12pt, letterpaper]{article}
-\usepackage[letterpaper, margin=1in]{geometry}
-\usepackage{anyfontsize}
-\usepackage{tabularx, multirow, hyperref, titlesec, comment}
+\documentclass[10pt, letterpaper]{article}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage{anyfontsize, tabularx, multirow, hyperref, titlesec, comment, enumitem}
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
+
+\thispagestyle{empty}
+
+% List style
+\setlist[itemize]{leftmargin=*, before=\vspace{-0.5\baselineskip},after=\vspace{-\baselineskip}, nosep}
 
 \begin{document}
 	\noindent
@@ -18,7 +22,8 @@
 	\noindent
 	\textbf{Currently looking for a software engineering intern for Summer 2019 (Jun-Sep).}
 	
-\begin{comment} % Header including mailing address
+\begin{comment}
+% Header including mailing address
 \begin{tabularx}{\linewidth}{X r}
 \multirow{4}{*}{{\fontsize{45}{60}\selectfont Yue Wu}} 
 & \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
@@ -36,8 +41,6 @@
 \texttt{09/2016} & \textbf{\large University of California, San Diego} \\
 \textbar & \textit{B.S. in Computer Science, Minor in Visual Arts: Computing and Arts} \\
 \texttt{06/2020} & Junior student with senior standing. \textbf{(GPA: 3.88/4)} \\
-\texttt{Courses} & Data Structures, Algorithms, Software Engineering, HCI Design, \\
-\texttt{Taken} & Computer Graphics (WIP), Computer Systems (WIP)
 \end{tabularx}
 
 
@@ -45,22 +48,69 @@
 \smallskip
 \noindent
 \begin{tabularx}{\linewidth}{l | X}
-\texttt{06/2018} & \textbf{\large LMT Technology} \\
-\textbar & \textit{Intern Front End Developer} \\
-\texttt{08/2018} & Worked on the migration of the company's product from Flash to HTML and Javascript. Reduced code length and boosted execution efficiency. Also helped on English localization and the setting up of a uniform code format. \\
+\texttt{06/2018} & \textbf{\large Shanghai LMT Technology} \\
+\textbar & \textit{Full Stack Developer Intern} \\
+\texttt{08/2018} & 
+\begin{itemize}
+	\item Worked on the migration of the company's product from Flash to HTML and Javascript, and from a custom backend to Spring framework. Reduced code length and boosted execution efficiency.
+	\item Helped on English localization. Met with English-speaking customers and promoted the product to them. 
+	\item Helped in setting up of a uniform code format.
+\end{itemize} \\
 \end{tabularx}
 
 
 \section{Other Projects}
 \smallskip
 \noindent
-\begin{tabular}{l r}	
-\textbf{\large Mechsuit VR} & \textit{Scripting Programmer} \\
-\multicolumn{2}{p{\linewidth}}{A 5-person VR club game project featuring HTC Vive and Unity. I implemented the inverse kinematic system for the armor, and helped in the movement propulsion system. Currently I'm working on the health and weapon system, as well as the UI display.} \\
+\begin{tabular}{l r}
+\textbf{\large Bodylogical MR} & \textit{Unity Designer} \\
+\multicolumn{2}{p{\linewidth}}{
+\begin{itemize}
+	\item Working with Prof. Jurgen Schulze from UCSD CS department. Bodylogical MR is an iOS AR application that visualizes and predicts people's health data based on their lifestyles. 
+	\item Currently I am designing the components for the app with Blender and Unity. Future work includes user interaction and data visualization in AR space.
+\end{itemize}
+} \\
+
+\textbf{\large Mechsuit VR} & \textit{Unity Programmer} \\
+\multicolumn{2}{p{\linewidth}}{
+\begin{itemize}
+	\item Working in a 5-person team in VR club to create a game featuring HTC Vive (Steam VR) and Unity.
+	\item Implemented the inverse kinematic system for the armor: the mechsuit's arm would match the player's arm movements.
+	\item Implemented the movement propulsion system: user would use physical movement to traverse through the arena.
+	\item Currently I am working on the health (with shield) and weapon (swords and guns) system, as well as the UI display.
+\end{itemize}
+} \\
+
 \textbf{\large Flashback Music} & \textit{Designer \& Programmer} \\
-\multicolumn{2}{p{\linewidth}}{A 5-person team software engineering project with Android. I implemented the main UI and refactored code to conform to various design patterns.} \\
+\multicolumn{2}{p{\linewidth}}{
+\begin{itemize}
+	\item Worked in a 5-person team to create an Android application, with Firebase integration. This is a music app that records the time and the location the songs are played so that users could trace their life.
+	\item I implemented the main UI and designed the app framework with Model-View-Controller and various design patterns (Factory, Adapter, Strategy).
+\end{itemize}
+} \\
+
+\textbf{\large Music Manager} & \textit{Individual Developer} \\
+\multicolumn{2}{p{\linewidth}}{
+\begin{itemize}
+	\item Completed a music file tag manager using C\# and WPF framework. this Windows application can play music and manage music ID3 tags.
+\end{itemize}
+} \\
+
+\textbf{\large WayAround} & \textit{Front End Programmer} \\
+\multicolumn{2}{p{\linewidth}}{
+\begin{itemize}
+	\item Worked in a 4-person team to create a web application mockup (front end only). The app would not give the fastest route between two points; it allows users to customize their routes so as to enjoy the trip iteslf.
+	\item After paper prototypes, I implemented the home page, where the user customizes the route. I wrote two versions for A/B testing. I also wrote the review page, where the user rates the route based on their customization.
+\end{itemize}	
+} \\
+
 \textbf{\large Transracer} & \textit{Back End Programmer} \\
-\multicolumn{2}{p{\linewidth}}{A 4-person HCI design web application. Using Node.js and sqlite, I implemented all database-related functionality and input validation logic.}
+\multicolumn{2}{p{\linewidth}}{
+\begin{itemize}
+	\item Worked in a 4-person team to create a web application with both front and back ends (Node.js, sqlite).
+	\item I implemented all the database logic for storing songs and scores. I also helped my Cognitive Science major teammate with translation hints, score calculation and performance data visualization.
+\end{itemize}
+}
 \end{tabular}
 
 
@@ -68,7 +118,7 @@
 \smallskip
 \noindent
 \begin{tabularx}{\linewidth}{r | X}
-	\texttt{June 2017} & 10th place at UCSD WIC Beginner's Programming Competition
+	\texttt{06/2017} & 10th place at UCSD WIC Beginner's Programming Competition
 \end{tabularx}
 
 
@@ -76,14 +126,15 @@
 \smallskip
 \noindent
 \begin{tabularx}{\linewidth}{r X}
-	\texttt{Proficient:} & C\# (Unity \& Windows), Java (Android \& JavaFX), HTML \& CSS, JavaScript (jQuery \& Node.js), \LaTeX, SQL \\
+	\texttt{Proficient:} & C\# (Unity, SteamVR, Windows), Java (Android, JavaFX, Spring), HTML \& CSS, JavaScript (jQuery, Node.js), \LaTeX, SQL(Mysql, sqlite) \\
 	\texttt{Intermediate:} & C, C++, Python \\
-	\texttt{Learning:} & Javascript(React.js), OpenGL
+	\texttt{Learning:} & Javascript(React.js), OpenGL, ARKit, Blender
 \end{tabularx}
 
-
+\begin{comment}
 \section{Interests}
 \smallskip
 \noindent
 I am fascinated by popular art (comics, games as well as rock music) and always wonder how far computers can take me in creating art. This leads me to minor in Visual Arts.
+\end{comment}
 \end{document}
