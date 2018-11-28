@@ -8,22 +8,25 @@
 \thispagestyle{empty}
 
 % List style
-\setlist[itemize]{leftmargin=*, before=\vspace{-0.5\baselineskip},after=\vspace{-\baselineskip}, nosep}
+\setlist[itemize]{leftmargin=*, before=\vspace{-0.5\baselineskip}, after=\vspace{-\baselineskip}, nosep}
 
 \begin{document}
-	\noindent
-	\begin{tabularx}{\linewidth}{X r}
-		\multirow{3}{*}{{\fontsize{45}{60}\selectfont Yue Wu}}
-		& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
-		& (858) 666-5847 \\
-		& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI}
-	\end{tabularx}
-	
-	\noindent
-	\textbf{Currently looking for a software engineering intern for Summer 2019 (Jun-Sep).}
-	
+\noindent
+\begin{tabularx}{\linewidth}{X r}
+	\multirow{3}{*}{{\fontsize{40}{50}\selectfont Yue Wu}}
+	& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
+	& (858) 666-5847 \\
+	& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI}
+\end{tabularx}
+
+% If explicitly asked to, uncomment.
 \begin{comment}
+\noindent
+\textbf{Currently looking for a software engineering intern for Summer 2019 (Jun-Sep).}
+\end{comment}
+
 % Header including mailing address
+\begin{comment}
 \begin{tabularx}{\linewidth}{X r}
 \multirow{4}{*}{{\fontsize{45}{60}\selectfont Yue Wu}} 
 & \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
@@ -37,100 +40,108 @@
 \section{Education}
 \smallskip
 \noindent
-\begin{tabularx}{\linewidth}{l | X}	
-\texttt{09/2016} & \textbf{\large University of California, San Diego} \\
-\textbar & \textit{B.S. in Computer Science, Minor in Visual Arts: Computing and Arts} \\
-\texttt{06/2020} & Junior student with senior standing. \textbf{(GPA: 3.88/4)} \\
+\begin{tabularx}{\linewidth}{X r}
+	\textbf{\large University of California, San Diego} & \texttt{09/2016-06/2020} \\
+	\textit{B.S. in Computer Science, Minor in Visual Arts: Computing and Arts} \textbf{(GPA: 3.88/4)} & \\
+	Courses Taken: Data Structures, Algorithms, Software Engineering, HCI Design, Computer Graphics
 \end{tabularx}
 
 
 \section{Work Experience}
 \smallskip
 \noindent
-\begin{tabularx}{\linewidth}{l | X}
-\texttt{06/2018} & \textbf{\large Shanghai LMT Technology} \\
-\textbar & \textit{Full Stack Developer Intern} \\
-\texttt{08/2018} & 
-\begin{itemize}
-	\item Worked on the migration of the company's product from Flash to HTML and Javascript, and from a custom backend to Spring framework. Reduced code length and boosted execution efficiency.
-	\item Helped on English localization. Met with English-speaking customers and promoted the product to them. 
-	\item Helped in setting up of a uniform code format.
-\end{itemize} \\
+\begin{tabularx}{\textwidth}{X r}
+	\textbf{\large Intern Full Stack Developer}, LMT Technology, Shanghai, China & \texttt{06/2018-08/2018} \\
+	\multicolumn{2}{p{\linewidth}}{
+		\begin{itemize}
+			\item Worked on the migration of the company's product from Flash to HTML and Javascript, and from a custom back end to Spring framework. Reduced code length and boosted execution efficiency.
+			\item Improved the translation of the product's English version, making it more understandable by English speakers. Met with English-speaking customers and promoted the product to them. 
+			\item Introduced JSDoc, a documentation format for Javascript, to the team, setting up a uniform code format.
+		\end{itemize}
+	} 
 \end{tabularx}
 
 
 \section{Other Projects}
 \smallskip
 \noindent
-\begin{tabular}{l r}
-\textbf{\large Bodylogical MR} & \textit{Unity Designer} \\
-\multicolumn{2}{p{\linewidth}}{
-\begin{itemize}
-	\item Working with Prof. Jurgen Schulze from UCSD CS department. Bodylogical MR is an iOS AR application that visualizes and predicts people's health data based on their lifestyles. 
-	\item Currently I am designing the components for the app with Blender and Unity. Future work includes user interaction and data visualization in AR space.
-\end{itemize}
-} \\
+\begin{tabularx}{\linewidth}{X r}
+	\textbf{\large Bodylogical MR}, Unity Developer & \texttt{10/2018-Present} \\
+	\multicolumn{2}{p{\linewidth}}{
+		\begin{itemize}
+			\item Working with Prof. Jurgen Schulze from UCSD CS department. This is an iOS AR app that would visualize and predict people's health data based on their lifestyles. 
+			\item Designed a 3D control panel with Blender so that users could navigate in 3D space to set parameters.
+			\item Currently designing data panels with Unity UI components and C\#. Devised 3D ribbon charts to display health statistics, thus utilizing AR space to clearly visualize data both across different lifestyles and across time.
+		\end{itemize}
+	} \\
+	
+	\textbf{\large Mechsuit VR}, Unity Developer & \texttt{04/2017-Present} \\
+	\multicolumn{2}{p{\linewidth}}{
+		\begin{itemize}
+			\item Working in a 5-person team in VR club to create a game featuring Steam VR and Unity. Players would wear mechanic armors and fight in an arena.
+			\item Implemented the inverse kinematic system for the armor using the positions of the VR headset and hand-held controllers. The suit's arm would match the player's arm movements, enabling efficient control of the armor.
+			\item Programmed a propulsion system with user movements as input, enabling motion control for users, who would have to physically move to traverse through the arena instead of fiddling with the joystick. 
+			\item Designed health and weapon systems, and UI for health and ammo display. Wrote health and weapon scripts with Strategy Pattern and interfaces so that they can be easily extended to add more damage types and player resistances.
+		\end{itemize}
+	} \\
+	
+	\textbf{\large Transracer}, Full Stack Developer & \texttt{04/2018-06/2018} \\
+	\multicolumn{2}{p{\linewidth}}{
+		\begin{itemize}
+			\item Worked in a 4-person team to create a web application with both front end (Bootstrap) and back end (Node.js). Transracer allows user to learn different languages through translating lyrics.
+			\item Developed all the database logic with sqlite for songs and scores, so that users can upload their favorite songs to the app for practice, and view their past attempts.
+			\item Helped my Cognitive Science major teammate to get familiar with jQuery in front end development. Improved score calculation based on the number of hints the user relies on and the correctness of the answer.
+		\end{itemize}
+	} \\
+	
+	\textbf{\large WayAround}, Front End Developer & \texttt{01/2018-03/2018} \\
+	\multicolumn{2}{p{\linewidth}}{
+		\begin{itemize}
+			\item Worked in a 4-person team to create a web application mockup (front end only). The app would not give the fastest route between two points; it allows users to customize their routes so as to enjoy the trip iteslf.
+			\item After paper prototypes, implemented the home page with Bootstrap, jQuery and Handlebars.js, where the users would customize the route. Wrote two versions of the page for A/B testing, analyzing the time each user used in navigating through the page to find out how users would approach a new product and modified to make the page user-friendly.
+			\item Perfected the review page, where the user rates the route based on their customization back on the home page.
+		\end{itemize}	
+	} \\
 
-\textbf{\large Mechsuit VR} & \textit{Unity Programmer} \\
-\multicolumn{2}{p{\linewidth}}{
-\begin{itemize}
-	\item Working in a 5-person team in VR club to create a game featuring HTC Vive (Steam VR) and Unity.
-	\item Implemented the inverse kinematic system for the armor: the mechsuit's arm would match the player's arm movements.
-	\item Implemented the movement propulsion system: user would use physical movement to traverse through the arena.
-	\item Currently I am working on the health (with shield) and weapon (swords and guns) system, as well as the UI display.
-\end{itemize}
-} \\
+	\textbf{\large Flashback Music}, Android Developer & \texttt{01/2018-03/2018} \\
+	\multicolumn{2}{p{\linewidth}}{
+		\begin{itemize}
+			\item Worked in a 5-person, Agile team to create an Android application, with Firebase integration. This music app records the time and location songs are played so that users could trace their life.
+			\item Separated UI interaction and back end logic with Model-View-Controller pattern resulting in cleaner code.
+			\item Devised separate logic for music stored locally or remotely under a set of interfaces with Strategy and Factory patterns.
+		\end{itemize}
+	}
+\end{tabularx}
 
-\textbf{\large Flashback Music} & \textit{Designer \& Programmer} \\
-\multicolumn{2}{p{\linewidth}}{
-\begin{itemize}
-	\item Worked in a 5-person team to create an Android application, with Firebase integration. This is a music app that records the time and the location the songs are played so that users could trace their life.
-	\item I implemented the main UI and designed the app framework with Model-View-Controller and various design patterns (Factory, Adapter, Strategy).
-\end{itemize}
-} \\
+% Little to talk about
+\begin{comment}
+\texttt{10/2018} & \textbf{Music Manager} \\
+\textbar & \textit{Individual Developer} \\
+\texttt{Present} & \begin{itemize}
+\item Completed a music file tag manager using C\# and WPF framework. this Windows application can play music and manage music ID3 tags.
+\end{itemize} \\
+\end{comment}
 
-\textbf{\large Music Manager} & \textit{Individual Developer} \\
-\multicolumn{2}{p{\linewidth}}{
-\begin{itemize}
-	\item Completed a music file tag manager using C\# and WPF framework. this Windows application can play music and manage music ID3 tags.
-\end{itemize}
-} \\
-
-\textbf{\large WayAround} & \textit{Front End Programmer} \\
-\multicolumn{2}{p{\linewidth}}{
-\begin{itemize}
-	\item Worked in a 4-person team to create a web application mockup (front end only). The app would not give the fastest route between two points; it allows users to customize their routes so as to enjoy the trip iteslf.
-	\item After paper prototypes, I implemented the home page, where the user customizes the route. I wrote two versions for A/B testing. I also wrote the review page, where the user rates the route based on their customization.
-\end{itemize}	
-} \\
-
-\textbf{\large Transracer} & \textit{Back End Programmer} \\
-\multicolumn{2}{p{\linewidth}}{
-\begin{itemize}
-	\item Worked in a 4-person team to create a web application with both front and back ends (Node.js, sqlite).
-	\item I implemented all the database logic for storing songs and scores. I also helped my Cognitive Science major teammate with translation hints, score calculation and performance data visualization.
-\end{itemize}
-}
-\end{tabular}
-
-
+% Not a big deal
+\begin{comment}
 \section{Awards}
 \smallskip
 \noindent
-\begin{tabularx}{\linewidth}{r | X}
-	\texttt{06/2017} & 10th place at UCSD WIC Beginner's Programming Competition
+\begin{tabularx}{\linewidth}{X r}
+	10th place at UCSD WIC Beginner's Programming Competition & \texttt{06/2017}
 \end{tabularx}
-
+\end{comment}
 
 \section{Skills}
 \smallskip
 \noindent
 \begin{tabularx}{\linewidth}{r X}
-	\texttt{Proficient:} & C\# (Unity, SteamVR, Windows), Java (Android, JavaFX, Spring), HTML \& CSS, JavaScript (jQuery, Node.js), \LaTeX, SQL(Mysql, sqlite) \\
-	\texttt{Intermediate:} & C, C++, Python \\
-	\texttt{Learning:} & Javascript(React.js), OpenGL, ARKit, Blender
+	\texttt{Languages} & C\#, Java, HTML, CSS, Javascript, C, C++, Python, \LaTeX \\
+	\texttt{Technology} & Unity, SteamVR, Windows Desktop, Android, JavaFX, jQuery, Node.js, SQL, OpenGL, React.js, Spring \\
+	\texttt{Software} & Visual Studio, Android Studio, vim, Blender, git, Linux
 \end{tabularx}
 
+% Not useful for job seeking
 \begin{comment}
 \section{Interests}
 \smallskip
