@@ -1,90 +1,127 @@
 \documentclass[UTF8]{ctexart}
- 
-\usepackage[letterpaper, margin=1in]{geometry}
-\usepackage{anyfontsize}
-\usepackage{tabularx, multirow, hyperref, titlesec, comment}
+\usepackage[a4paper, margin=0.5in]{geometry}
+\usepackage{anyfontsize, tabularx, multirow, hyperref, titlesec, comment, enumitem}
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 
+\thispagestyle{empty}
+
+% List style
+\setlist[itemize]{leftmargin=*, before=\vspace{-0.5\baselineskip}, after=\vspace{-\baselineskip}, nosep}
+
+% Customized multicolumn
+\newcommand{\itemcols}[1]{
+	\multicolumn{2}{p{\dimexpr \linewidth-2\tabcolsep}}{
+		\begin{itemize}
+			#1
+		\end{itemize}
+	}
+}
+
 \begin{document}
-\pagestyle{plain}
-\noindent
-\begin{tabularx}{\linewidth}{X r}
-\multirow{3}{*}{\Huge 吴越}
-& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
-& +1-(858) 666-5847 \\
-& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI}
-\end{tabularx}
-
-\smallskip
-
-\section{教育经历}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{l | X}
-\texttt{2016.9} & \textbf{\large 加州大学圣地亚哥分校} \\
-\textbar & \textbf{University of California, San Diego} \\
-\texttt{2020.6} & \textit{专业：计算机科学，辅修：视觉艺术（计算与艺术）} \\
-& \textbf{目前就读大三。（综合GPA：3.88/4 ~~~ 专业GPA：3.95/4)} \\
-%\texttt{已修课程} & 软件工程，交互设计，算法设计，计算能力理论，离散数学，数据结构，计算机架构
-\end{tabularx}
-
-\smallskip
-
-\section{工作经验}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{l | X}
-\texttt{2018.6} & \textbf{\large 上海莱曼特信息科技} \\
-\textbar & \textit{实习前端工程师} \\
-\texttt{2018.8} & 参加软件的改版，从Flash迁移至HTML5，并重构代码、编写插件，减少代码量，加快运行速度。同时帮助完成软件的本地化（英文），并帮助同一公司的代码规范。 \\
-\end{tabularx}
-\noindent
-
-\smallskip
-
-\section{其它项目}
-\smallskip
-\noindent
-\begin{tabular}{l r}
-\textbf{\large Mechsuit VR} {\small (WIP)} & \textit{程序员、测试员} \\
-\multicolumn{2}{p{\linewidth}}{学校“虚拟现实社团”小组合作开发项目。该项目是利用Unity游戏引擎开发的一个虚拟现实游戏，玩家佩戴HTC Vive后可以在游戏竞技场中披上动力装甲进行战斗。用C\#语言开发，将逆运动学原理应用到游戏装甲中，并进行VR测试。} \\
-\textbf{\large Music Manager} & \textit{个人开发者} \\
-\multicolumn{2}{p{\linewidth}}{采用C\#语言，在WPF平台上开发的个人项目。Music Manager可以播放音乐、管理音乐的ID3标签，并转换音乐格式。} \\
-\textbf{\large SMSEmail} & \textit{设计师、程序员} \\
-\multicolumn{2}{p{\linewidth}}{利用Twilio API和Java邮件开发出SMS Email应用程序。使用该程序，在没有网络的情况下，用户可以接受或发送文本信息。本人负责文本格式分析工作。} \\
-\textbf{\large Flashback Music} & \textit{程序员} \\
-\multicolumn{2}{p{\linewidth}}{软件工程课程作品，5人合作完成。基于Android平台开发。该App会记录用户播放音乐的时间、地点，用户可以进入“回放模式”来重温他们在这一时段或正在这一地点曾经听过的歌曲。我负责UI的编写，并重构代码使其符合设计模式。} \\
-\textbf{\large WayAround} & \textit{前端程序员} \\
-\multicolumn{2}{p{\linewidth}}{4人小组进行的HCI项目（仅前端）。我编写了首页和评论页。用户可以在首页自定义路径参数，并在评论页对路径进行评价。} \\
-\textbf{\large Transracer} & \textit{后端程序员} \\
-\multicolumn{2}{p{\linewidth}}{4人小组进行的HCI项目（前后端），使用Node.js作为服务器端，sqlite作为数据库。我编写了和数据库相关的所有后端逻辑，并实现输入验证的逻辑。}
-\end{tabular}
-
-\smallskip
-
-\section{奖项}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{r | X}
-\texttt{2017.6} & 校园“新手程序员比赛”第十名
-\end{tabularx}
-
-\smallskip
-
-\section{技能}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{r X}
-\texttt{熟练:} & C\# (Unity, Windows), Java (Android), JavaScript (Node.js), C, \LaTeX \\
-\texttt{中等:} & C++, Python, HTML \& CSS
-\end{tabularx}
-
-\smallskip
-
-\section{兴趣}
-\smallskip
-\noindent
-喜欢绘制漫画和游戏插图，痴迷摇滚乐。对日本动漫、音乐文化兴趣浓厚，正在学习日语。
+	\noindent
+	\begin{tabularx}{\linewidth}{X r}
+		\multirow{3}{*}{{\fontsize{40}{50}\selectfont 吴越}}
+		& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
+		& +1-(858) 666-5847 \\
+		& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI}
+	\end{tabularx}
+	
+	
+	% If explicitly asked to, uncomment.
+	\begin{comment}
+	\noindent
+	\textbf{寻求2019年6-9月软件工程方面的实习。}
+	\end{comment}
+	
+	% Header including mailing address
+	\begin{comment}
+	\begin{tabularx}{\linewidth}{X r}
+	\multirow{5}{*}{{\fontsize{45}{60}\selectfont 吴越}} 
+	& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
+	& +1-(858) 666-5847 \\
+	& 8840 Costa Verde Blvd. Apt. 3322 \\
+	& San Diego, CA 92122
+	& United States
+	\end{tabularx}
+	\end{comment}
+	
+	
+	\section{教育经历}
+	\smallskip
+	\noindent
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{\large 美国加州大学圣地亚哥分校}（University of California, San Diego） & \texttt{2016/09-2020/06} \\
+		\itemcols {
+			\item 专业：计算机科学（B.S. Computer Science），辅修：视觉艺术（计算与艺术） \textbf{(GPA: 3.90/4)
+			%\item 已修课程：数据结构、算法、软件工程、交互设计、图形学、离散数学、计算理论
+		}
+	}
+	\end{tabularx}
+	
+	
+	\section{工作经验}
+	\smallskip
+	\noindent
+	\begin{tabularx}{\textwidth}{X r}
+		\textbf{\large 实习前端工程师}，莱曼特信息科技，中国上海 & \texttt{2018/06-2018/08} \\
+		\itemcols{
+			\item 参加软件的改版，从Flash迁移至HTML5。减少代码量，加快运行速度。
+			%\item 改善产品的英文版本，使其更容易被国外客户所理解。与国外客户会面，向其宣传产品。
+			\item 引入JSDoc，对Javascript进行规范，在公司内建立统一的代码风格。
+		} 
+	\end{tabularx}
+	
+	
+	\section{其他项目}
+	\smallskip
+	\noindent
+	\begin{tabularx}{\linewidth}{X r}
+		\textbf{\large Bodylogical MR}，Unity开发者 & \texttt{2018/10至今} \\
+		\itemcols{
+			\item 与UCSD计算机部门的Jurgen Schulze教授一同开发。这是一款基于iOS的AR程序，可基于人们的生活习惯来预测和展现其健康数据。 
+			\item 使用Blender建模软件，创建3D控制面板以便用户调整健康参数。同时创建相关道具（健身器材、医院病床等）以更直观地展现健康状况。
+			\item 使用C\#设计面板，通过3D带状图（Ribbon chart）显示健康数据，利用AR同时显示多组数据进行对比。
+		} \\
+		
+		\textbf{\large Mechsuit VR}，Unity开发者 & \texttt{2017/04至今} \\
+		\itemcols{
+			\item 5人小组项目，使用Steam VR和Unity编写VR游戏。玩家可以穿着格斗机甲，在竞技场中战斗。
+			\item 开发了适用于机甲的逆运动学系统（inverse kinematic system）。通过追踪玩家头部（VR眼镜）和手部（VR控制器）的位置，机甲的手臂会根据玩家手臂而移动，使得玩家可以高效控制机甲。
+			\item 编写了动力系统，玩家可以在现实空间中摆动身体以实现在虚拟空间中的位移。相比控制摇杆，这种操纵方式给予玩家身临其境之感。
+			\item 设计了生命与武器系统，以及配套UI来显示玩家生命与当前武器。使用策略（Strategy）模式编写脚本，使其能够被轻易扩展，可支持各种伤害类型与伤害抗性。
+		} \\
+		
+		\textbf{\large Transracer}，全栈开发者 & \texttt{2018/04-2018/06} \\
+		\itemcols{
+			\item 4人小组项目，共同开发网页app，前端使用Bootstrap，后端使用Node.js。用户通过翻译歌词来学习外语。
+			\item 使用sqlite编写所有数据库逻辑，数据库用于存储歌曲与用户得分，用户可将喜欢的歌曲上传到网站以练习。
+			\item 改善了计算得分逻辑：app会基于用户使用提示的数量及回答的正确率来计算用户得分，使得分更为准确。
+		} \\
+		
+		\textbf{\large WayAround}，前端开发者 & \texttt{2018/01-2018/03} \\
+		\itemcols{
+			\item 4人小组项目，共同开发网页程序的视觉原型（mockup）。该导航软件允许用户根据喜好定义线路。
+			\item 在完成纸质原型后，使用Bootstrap和jQuery开发了首页。编写了两版首页以供A/B测试，分析用户选择喜好所花费的时间，以了解用户如何接触一款新产品，并根据结果修改首页使其对用户更加友好。
+			\item 完善评价页，根据用户之前选择的喜好动态生成表单，使页面更为精简。	
+		} \\
+		
+		\textbf{\large Flashback Music}，安卓开发者 & \texttt{2018/01-2018/03} \\
+		\itemcols{
+			\item 5人小组项目，遵循敏捷（Agile）开发原则，开发安卓程序。这款音乐app会记录用户听歌的时间和地点。
+			\item 使用Model-View-Controller模式，分离UI交互与后台逻辑，使得代码更加清晰。
+			\item 使用策略（Strategy）模式和工厂（Factory）模式，为本地音乐和云端音乐设计了不同的逻辑，并将其统一在同一套接口（interface）之下。
+		}
+	\end{tabularx}
+	
+	
+	\section{技能}
+	\smallskip
+	\noindent
+	\begin{tabularx}{\linewidth}{l X}
+		\texttt{语言} & C\#, Java, HTML, CSS, Javascript, C, C++, Python, \LaTeX \\
+		\texttt{技术} & Unity, SteamVR, Windows Desktop, Android, JavaFX, jQuery, Node.js, SQL, OpenGL, React.js \\
+		\texttt{软件} & Visual Studio, Android Studio, vim, Blender, git, Linux
+	\end{tabularx}
 \end{document}
