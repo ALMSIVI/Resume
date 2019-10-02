@@ -2,6 +2,10 @@
 \usepackage[letterpaper, margin=0.5in]{geometry}
 \usepackage{anyfontsize, tabularx, multirow, hyperref, titlesec, comment, enumitem}
 
+% Font setting
+%\usepackage{fontspec}
+%\setmainfont[Ligatures=TeX]{Calibri}
+
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 
@@ -23,16 +27,17 @@
 \begin{document}
 \noindent
 \begin{tabularx}{\linewidth}{X r}
-	\multirow{3}{*}{{\fontsize{40}{50}\selectfont Yue Wu}}
+	\multirow{4}{*}{{\fontsize{45}{55}\selectfont Yue Wu}}
 	& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
 	& (858) 666-5847 \\
-	& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI}
+	& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI} \\
+	& \href{https://www.linkedin.com/in/yue-wu-aaab2213b/}{https://www.linkedin.com/in/yue-wu-aaab2213b/}
 \end{tabularx}
 
 % If explicitly asked to, uncomment.
 %\begin{comment}
 \noindent
-%\textbf{I am looking for software engineering internship opportunities for Summer 2019 (Jun-Sep).}
+\textbf{Looking for full-time Software Engineer opportunities starting Summer 2020.}
 %\end{comment}
 
 % Header including mailing address
@@ -53,8 +58,8 @@
 \begin{tabularx}{\linewidth}{X r}
 	\textbf{\large University of California, San Diego} & \texttt{09/2016-06/2020} \\
 	\itemcols{
-		\item B.S. in Computer Science, Minor in Visual Arts: Computing and Arts \textbf{(GPA: 3.90/4)}
-		\item Courses Taken: Data Structures, Algorithms, Software Engineering, HCI Design, Computer Graphics, Operating Systems
+		\item B.S. in Computer Science, Minor in Visual Arts: Computing and Arts \textbf{(Cumulative GPA: 3.917/4)}
+		\item Courses Taken: Data Structures, Algorithms, Software Engineering, HCI Design, Computer Graphics, Operating Systems, Programming Languages, Compilers, Deep Learning
 	}
 \end{tabularx}
 
@@ -63,8 +68,8 @@
 \smallskip
 \noindent
 \begin{tabularx}{\linewidth}{l X}
-	\texttt{Language} & C\#, Java, HTML, CSS, Javascript, C, C++, Python, \LaTeX \\
-	\texttt{Framework} & Unity, SteamVR, Windows Desktop, Android, JavaFX, jQuery, Node.js, SQL, OpenGL, React.js, Spring \\
+	\texttt{Language} & C\#, Java, Javascript/Typescript, C, C++, Python, Haskell, \LaTeX, Shader (GLSL, HLSL/ShaderLab) \\
+	\texttt{Framework} & Unity, SteamVR, WPF, Android, jQuery, Node.js, SQL, OpenGL/WebGL, React.js. THREE.js \\
 	\texttt{Software} & Visual Studio, Android Studio, vim, Blender, git, Linux
 \end{tabularx}
 
@@ -73,55 +78,57 @@
 \smallskip
 \noindent
 \begin{tabularx}{\textwidth}{X r}
+	\textbf{\large Intern Data Visualization Engineer}, Alibaba Inc., Hangzhou, China & \texttt{06/2019-08/2019} \\
+	\itemcols{
+		\item Constructed a backend graph layout library for 3D graph visualization using Typescript, where I integrated force-directed layout and Sugiyama algorithm, the library is more flexible than d3.js.
+		\item Developed a geographic model generation service featuring a Marching Square algorithm 100x more precise and more powerful than turf.js, that will be used in press conferences, including the Double 11 Festival.
+		\item Collaborated with a naked eye 3D project team to discover data visualization and HCI in Unity/WebGL, where I explored Entitas, a data-oriented framework similar to Redux, and wrote shaders for various effects.
+	} \\
+
+	\textbf{\large Unity Developer}, UCSD Qualcomm Institute, La Jolla, California & \texttt{10/2018-06/2019} \\
+	\itemcols{		
+		\item Built an iOS AR app for PricewaterhouseCoopers (PwC)'s Bodylogical software.
+		\item Designed three visualization modules in Unity (ARKit) that would allow data to be presented in 3D space across different time frames, allowing the user to easily grasp the core functions of the simulator.
+		\item Implemented an XML-based localization system and a tutorial system from scratch so that PwC can demonstrate the app to non English speakers who might be new to AR.
+	} \\
+
 	\textbf{\large Intern Full Stack Developer}, LMT Technology, Shanghai, China & \texttt{06/2018-08/2018} \\
 	\itemcols{
-		\item Worked on migration of the company's product from Flash to HTML and Javascript, and from a custom back end to Spring framework. Reduced code length and boosted execution efficiency.
-		\item Improved translation of the product's English version, making it more understandable by English speakers. Met with English-speaking customers and promoted the product. 
+		\item Refactored company's product from Flash to HTML/Javascript, and from a custom backend to Spring, reducing code length and boosting execution efficiency.
+		\item Poinpointed and addressed localization and responsive UI issues, making the product more foreigner-friendly and improving user experience.
 		\item Introduced JSDoc, a documentation format for Javascript, to the team, setting up a uniform code format.
-	} 
+	}
 \end{tabularx}
 
 
-\section{Other Projects}
+\section{Selected Projects}
 \smallskip
 \noindent
 \begin{tabularx}{\linewidth}{X r}
-	\textbf{\large Bodylogical MR}, Unity Developer & \texttt{10/2018-Present} \\
-	\itemcols{		
-		\item Working with Prof. Jurgen Schulze from UCSD Qualcomm Institute. This is an iOS AR app that would demonstrate the functions and use cases of Bodylogical, a human health simulator.
-		% \item Designed a 3D control panel with Blender so that users could navigate in 3D space to set parameters. Also designed health props (gym equipements, hospital beds, etc.) to give an instinctive impression on health status.
-		\item Designed data panels with C\#. Devised 3D ribbon charts to display health statistics, thus utilizing AR space to clearly visualize data both across different lifestyles and across time.
-		\item Developed an animation system with Unity. Characters would perform different activities, giving an instinct reflection of his/her health status.
-		\item Currently working on a ``Prius'' view that would visualize how specific health metrics affect one's internal health.
-	} \\
-	
-	\textbf{\large Mechsuit VR}, Unity Developer & \texttt{04/2017-Present} \\
+	\textbf{\large MechSuit VR}, Unity Developer & \texttt{04/2017-06/2019} \\
 	\itemcols{
-		\item Working in a 5-person team in VR club to create a game featuring Steam VR and Unity. Players would wear mechanic armors and fight in an arena.
-		\item Implemented the inverse kinematic system for the armor using the positions of the VR headset and hand-held controllers. The suit's arm would match the player's arm movements, enabling efficient control of the armor.
+		\item Joined the school's Virtual Reality Club to work on a Unity fighting game featuring Steam VR (Vive).
+		\item Implemented the inverse kinematic system for the armor using the positions of the VR headset and hand-held controllers, which boosted player control efficiency.
 		\item Programmed a propulsion system with player movements as input, enabling motion control for players, who would physically move to traverse through the arena instead of using the joystick.
-		\item Designed health and weapon systems, and UI for health and ammo display. Wrote scripts with Strategy Pattern and interfaces so that they can be easily extended for various damage types and player resistances.
-		\item Currently working on a motion recognition system with Tensorflow and LSTM. Players would be able to switch weapons by performing different actions.
+		\item Designed health and weapon systems, and UI for health and ammo display using MVC, writing scripts with Strategy Pattern so that they can be easily extended for various damage types and player resistances.
 	} \\
 	
 	\textbf{\large Transracer}, Full Stack Developer & \texttt{04/2018-06/2018} \\
 	\itemcols{
-		\item Worked in a 4-person team to create a web application with both front end (Bootstrap) and back end (Node.js). The app allows user to learn different languages through translating lyrics.
+		\item Worked in a 4-person team to create a web application with both front end (Bootstrap) and back end (Node.js) that allows user to learn different languages through translating lyrics.
 		\item Developed all the database logic with sqlite for songs and scores, so that users can upload their favorite songs to the app for practice, and view their past attempts.
 		\item Improved score calculation based on the number of hints the user relies on and the correctness of the answer.
 	} \\
 	
-
-	
 	\textbf{\large Flashback Music}, Android Developer & \texttt{01/2018-03/2018} \\
 	\itemcols{
-		\item Worked in a 5-person, Agile team to create an Android application. This music app records the time and location songs are played so that users could reminisce on their moods.
+		\item Worked in a 5-person, Agile team to create an Android music application that records the time and location songs are played so that users could reminisce on their moods.
 		\item Separated UI interaction and back end logic with Model-View-Controller pattern resulting in cleaner code.
 		\item Devised separate logic for local and cloud music under a set of interfaces with Strategy and Factory patterns.
 	}
 \end{tabularx}
 
-	\begin{comment}
+\begin{comment}
 \textbf{\large WayAround}, Front End Developer & \texttt{01/2018-03/2018} \\
 \itemcols{
 \item Worked in a 4-person team to create a web application mockup. The app allows users to customize their routes so as to enjoy the trip to the destination.
