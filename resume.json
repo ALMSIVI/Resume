@@ -16,13 +16,48 @@
         "time": "09/2016-12/2021",
         "gpa": "3.92/4",
         "courses": [
-            "Data Structures", "Algorithms", "Software Engineering", "HCI Design", "Computer Graphics", "Operating Systems", "Programming Languages", "Compilers", "Deep Learning", "Network", "Databases"
+            "Data Structures",
+            "Algorithms",
+            "Software Engineering",
+            "HCI Design",
+            "Computer Graphics",
+            "Operating Systems",
+            "Programming Languages",
+            "Compilers",
+            "Deep Learning",
+            "Network",
+            "Databases"
         ]
     },
     "skills": {
-        "language": ["C#", "Java", "Javascript/Typescript", "HTML", "CSS", "C/C++", "Python", "LaTeX", "Shader (GLSL/HLSL)"],
-        "framework": ["Unity", "SteamVR", "WPF", "Android", "jQuery", "Node.js", "SQL", "OpenGL/WebGL", "React.js", "THREE.js"],
-        "software": ["vim", "git", "Linux"]
+        "language": [
+            { "name": "C#", "level": 5 },
+            { "name": "Java", "level": 5 },
+            { "name": "Javascript/Typescript", "level": 5 },
+            { "name": "HTML", "level": 5 },
+            { "name": "CSS", "level": 4 },
+            { "name": "C/C++", "level": 4 },
+            { "name": "Python", "level": 5 },
+            { "name": "LaTeX", "level": 5 },
+            { "name": "Shader (GLSL/HLSL)", "level": 5 }
+        ],
+        "framework": [
+            { "name": "Unity", "level": 5 },
+            { "name": "SteamVR", "level": 5 },
+            { "name": "WPF", "level": 3 },
+            { "name": "Android", "level": 3 },
+            { "name": "jQuery", "level": 5 },
+            { "name": "Node.js", "level": 5 },
+            { "name": "SQL", "level": 4 },
+            { "name": "OpenGL/WebGL", "level": 5 },
+            { "name": "React.js", "level": 5 },
+            { "name": "THREE.js", "level": 5 }
+        ],
+        "software": [
+            { "name": "vim", "level": 5 },
+            { "name": "git", "level": 5 },
+            { "name": "Linux", "level": 4 }
+        ]
     },
     "work": [
         {
@@ -32,8 +67,8 @@
             "date": "10/2018-Present",
             "bullets": [
                 "Built an iOS AR app for PricewaterhouseCoopers (PwC)'s Bodylogical software.",
-		        "Designed three visualization modules in Unity (ARKit) that would allow data to be presented in 3D space across different time frames, allowing the user to easily grasp the core functions of the simulator.",
-		        "Implemented an XML-based localization system and a tutorial system from scratch so that PwC can demonstrate the app to non English speakers who might be new to AR."
+                "Designed three visualization modules in Unity (ARKit) that would allow data to be presented in 3D space across different time frames, allowing the user to easily grasp the core functions of the simulator.",
+                "Implemented an XML-based localization system and a tutorial system from scratch so that PwC can demonstrate the app to non English speakers who might be new to AR."
             ]
         },
         {

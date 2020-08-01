@@ -16,14 +16,14 @@ education = template['education'].format(resume['education']['name'], resume['ed
                                          resume['education']['degree'], resume['education']['gpa'], ', '.join(resume['education']['courses']))
 
 # Need to escape 'C#' to 'C\#' and 'LaTeX' to '\LaTeX'
-for i in range(len(resume['skills']['language'])):
-    if resume['skills']['language'][i] == 'C#':
-        resume['skills']['language'][i] = 'C\\#'
-    elif resume['skills']['language'][i] == 'LaTeX':
-        resume['skills']['language'][i] = '\\LaTeX'
 
-skills = template['skills'].format(', '.join(resume['skills']['language']), ', '.join(
-    resume['skills']['framework']), ', '.join(resume['skills']['software']))
+
+def generate_skill(skill):
+    return skill['name'].replace('#', '\\#').replace('LaTeX', '\\LaTeX')
+
+
+skills = template['skills'].format(', '.join(map(generate_skill, resume['skills']['language'])), ', '.join(
+    map(generate_skill, resume['skills']['framework'])), ', '.join(map(generate_skill, resume['skills']['software'])))
 
 
 def generate_work(project):
