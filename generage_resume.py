@@ -7,7 +7,8 @@ with open('template.json', 'r') as f:
     template = json.load(f)
 
 info = template['info'].format(resume['info']['name'], resume['info']['email'],
-                               resume['info']['phone'], resume['info']['github'], resume['info']['linkedin'])
+                               resume['info']['phone'], resume['info']['website'],
+							   resume['info']['github'], resume['info']['linkedin'])
 
 comments = template['comments'].format(
     resume['comments']['position']) if resume['comments']['include'] else ''
