@@ -1,0 +1,164 @@
+{
+    "info": {
+        "name": "吴越",
+        "email": "yuw264@ucsd.edu",
+        "phone": "(+1) (858) 666-5847",
+        "website": "https://almsivi.github.io",
+        "github": "https://github.com/ALMSIVI",
+        "linkedin": "https://www.linkedin.com/in/yue-wu-aaab2213b/"
+    },
+    "comments": {
+        "position": "我正在寻找2021年暑期实习的机会。",
+        "include": false
+    },
+    "education": {
+        "name": "加州大学圣地亚哥分校",
+        "degree": "专业：计算机科学（B.S.与 M.S.）",
+        "time": "2016/09-2021/12",
+        "gpa": "3.92/4",
+        "courses": [
+            "数据结构",
+            "算法",
+            "软件工程",
+            "人机交互设计",
+            "图形学",
+            "操作系统",
+            "计算机语言",
+            "编译原理",
+            "深度学习",
+            "计算机网络",
+            "数据库"
+        ]
+    },
+    "skills": {
+        "language": [
+            { "name": "C#", "level": 5 },
+            { "name": "Java", "level": 5 },
+            { "name": "Javascript/Typescript", "level": 5 },
+            { "name": "HTML", "level": 5 },
+            { "name": "CSS", "level": 4 },
+            { "name": "C/C++", "level": 4 },
+            { "name": "Python", "level": 5 },
+            { "name": "LaTeX", "level": 5 },
+            { "name": "Shader (GLSL/HLSL)", "level": 5 }
+        ],
+        "framework": [
+            { "name": "Unity", "level": 5 },
+            { "name": "SteamVR", "level": 5 },
+            { "name": "WPF", "level": 3 },
+            { "name": "Android", "level": 3 },
+            { "name": "jQuery", "level": 5 },
+            { "name": "Node.js", "level": 5 },
+            { "name": "SQL", "level": 4 },
+            { "name": "OpenGL/WebGL", "level": 5 },
+            { "name": "React.js", "level": 5 },
+            { "name": "THREE.js", "level": 5 }
+        ],
+        "software": [
+            { "name": "vim", "level": 5 },
+            { "name": "git", "level": 5 },
+            { "name": "Linux", "level": 4 }
+        ]
+    },
+    "work": [
+        {
+            "position": "Unity开发者",
+            "company": "UCSD Qualcomm Institute",
+            "location": "加州拉霍亚",
+            "date": "2018/10至今",
+            "image": "QI",
+            "bullets": [
+                "为美国普华永道的Bodylogical系统开发iOS AR应用。",
+                "在Unity中设计并实现了3套不同的可视化模组，数据以时间排列，分布在3维空间中，用户可以方便地理解Body logical的核心功能。",
+                "从头编写了一套基于XML的本地化系统与教程系统，使得非美国客户及对AR不熟悉的客户可以轻松上手。"
+            ]
+        },
+        {
+            "position": "实习前端工程师",
+            "company": "阿里巴巴集团",
+            "location": "中国杭州",
+            "date": "2019/06-2019/08",
+            "image": "Alibaba",
+            "bullets": [
+                "基于力导向图原理和Sugiyama算法，用Typescript搭建对图类结构进行3D可视化的库，以替换turf.js。",
+                "基于Marching Square算法开发了一套地理模型生成服务，比turf.js自带算法精确100倍，并用于阿里9号馆及双11等数据大屏展示中。",
+                "与达摩院的裸眼3D团队合作，研究3维空间下基于Unity/WebGL的人机交互和数据可视化。探索了Entitas框架并编写Shader实现多样的视觉效果。"
+            ]
+        },
+        {
+            "position": "实习全栈工程师",
+            "company": "莱曼特信息科技",
+            "location": "中国上海",
+            "date": "2018/06-2018/08",
+            "image": "LMT",
+            "bullets": [
+                "参加软件的改版，从Flash迁移至HTML5。减少代码量，加快运行速度。",
+                "完善产品的本地化与响应式UI界面，使其对外国用户更加友好，提升用户体验。",
+                "引入JSDoc，对Javascript进行规范，在公司内建立统一的代码风格。"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Exteractive",
+            "position": "全栈工程师",
+            "date": "2020/07至今",
+            "link": "https://github.com/ALMSIVI/exteractive",
+            "hide": false,
+            "bullets": [
+                "交互小说类型的网页应用，以React作为前端，Express作为后端。",
+                "使用MongoDB作为数据库开发了用户系统，用户可以编写故事，续写其他人的故事并对其做出评价。",
+                "利用React和Emotion等库实现了响应式UI及本地化。"
+            ]
+        },
+        {
+            "name": "MechSuit VR",
+            "position": "Unity开发者",
+            "date": "2017/04-2019/06",
+            "link": "https://github.com/TritonXR/Mechsuit-VR",
+            "hide": false,
+            "bullets": [
+                "学校虚拟现实俱乐部的小组项目，使用Steam VR和Unity开发基于HTC Vive设备的VR游戏。",
+                "实现逆运动学系统，通过VR眼镜和手柄的位置来控制机甲手臂的位置，增加代入感和玩家控制机甲的效率。",
+                "编写动力系统，以玩家在物理空间中的移动作为输入，对虚拟空间中的机甲带来推力，玩家无需使用手柄来移动机甲，这种操纵方式给予玩家身临其境之感。",
+                "设计了生命值系统与武器系统，并使用MVC模型设计了生命值与弹药显示的UI。利用策略模式等设计模式，编写脚本使得开发人员能迅速增加其他伤害类型与机甲抗性。"
+            ]
+        },
+        {
+            "name": "Transracer",
+            "position": "全栈工程师",
+            "date": "2018/04-2018/06",
+            "link": "https://github.com/ALMSIVI/TransRacer",
+            "hide": false,
+            "bullets": [
+                "4人小组项目，共同开发网页app，前端使用Bootstrap，后端使用Node.js。用户通过翻译歌词来学习外语。",
+                "使用sqlite编写所有数据库逻辑，数据库用于存储歌曲与用户得分，用户可将喜欢的歌曲上传到网站以练习。",
+                "改善了计算得分逻辑：app会基于用户使用提示的数量及回答的正确率来计算用户得分，使得分更为准确。"
+            ]
+        },
+        {
+            "name": "Flashback Music",
+            "position": "安卓开发者",
+            "date": "2018/01-2018/03",
+            "link": "https://github.com/ALMSIVI/FlashbackMusic",
+            "hide": true,
+            "bullets": [
+                "5人小组项目，遵循敏捷开发原则，开发安卓程序。这款音乐app会记录用户听歌的时间和地点。",
+                "使用Model-View-Controller模式，分离UI交互与后台逻辑，使得代码更加清晰。",
+                "使用策略模式和工厂模式，为本地音乐和云端音乐设计了不同的逻辑，并将其统一在同一套接口之下。"
+            ]
+        },
+        {
+            "name": "WayAround",
+            "position": "前端开发者",
+            "date": "2018/01-2018/03",
+            "link": "https://github.com/ALMSIVI/wayaround",
+            "hide": true,
+            "bullets": [
+                "4人小组项目，共同开发网页程序的视觉原型。该导航软件允许用户根据喜好定义线路。",
+                "在完成纸质原型后，使用Bootstrap和jQuery开发了首页。编写了两版首页以供A/B测试，分析用户选择喜好所花费的时间，以了解用户如何接触一款新产品，并根据结果修改首页使其对用户更加友好。",
+                "完善评价页，根据用户之前选择的喜好动态生成表单，使页面更为精简。"
+            ]
+        }
+    ]
+}

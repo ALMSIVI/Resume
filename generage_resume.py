@@ -1,9 +1,18 @@
 import json
+import argparse
 
-with open('resume.json', 'r') as f:
+
+parser = argparse.ArgumentParser(description = 'Create a LaTex resume file from a template.')
+parser.add_argument('-t', '--template', default = 'template.json', help = 'Template tex file.')
+parser.add_argument('-r', '--resume', default = 'resume.json', help = 'Resume data file.')
+parser.add_argument('-o', '--output', default = 'resume.tex', help = 'Output tex file.')
+
+args = parser.parse_args()
+
+with open(args.resume, 'r') as f:
     resume = json.load(f)
 
-with open('template.json', 'r') as f:
+with open(args.template, 'r') as f:
     template = json.load(f)
 
 info = template['info'].format(resume['info']['name'], resume['info']['email'],
@@ -45,5 +54,5 @@ projects = template['projects']['template'].format(
 string = template['template'].format(
     info, comments, education, skills, work, projects)
 
-with open('resume.tex', 'w') as f:
+with open(args.output, 'w') as f:
     f.write(string)
