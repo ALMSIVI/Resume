@@ -1,0 +1,167 @@
+{
+  "info": {
+    "name": "Yue Wu",
+    "email": "yuw264@ucsd.edu",
+    "phone": "(858) 666-5847",
+    "website": "https://almsivi.github.io",
+    "github": "https://github.com/ALMSIVI",
+    "linkedin": "https://www.linkedin.com/in/yue-wu-aaab2213b/"
+  },
+  "comments": {
+    "position": "I am currently looking for Software Engineer internship opportunities for Summer 2021.",
+    "include": true
+  },
+  "education": {
+    "name": "University of California, San Diego",
+    "bs": "B.S. in Computer Science, graduated with university latin honors",
+    "bsdate": "09/2016-06/2020",
+    "bsgpa": "3.92/4",
+    "ms": "M.S. in Computer Science",
+    "msdate": "09/2020-12/2021",
+    "courses": [
+      "Data Structures",
+      "Algorithms",
+      "Software Engineering",
+      "HCI Design",
+      "Computer Graphics",
+      "Operating Systems",
+      "Programming Languages",
+      "Compilers",
+      "Deep Learning",
+      "Network",
+      "Databases"
+    ]
+  },
+  "skills": {
+    "language": [
+      { "name": "C#", "level": 5 },
+      { "name": "Java", "level": 5 },
+      { "name": "Javascript/Typescript", "level": 5 },
+      { "name": "HTML", "level": 5 },
+      { "name": "CSS", "level": 4 },
+      { "name": "C/C++", "level": 4 },
+      { "name": "Python", "level": 5 },
+      { "name": "LaTeX", "level": 5 },
+      { "name": "Shader (GLSL/HLSL)", "level": 5 }
+    ],
+    "framework": [
+      { "name": "Unity", "level": 5 },
+      { "name": "React", "level": 5 },
+      { "name": "Redux", "level": 4 },
+      { "name": "Node", "level": 5 },
+      { "name": "Express", "level": 5 },
+      { "name": "MongoDB", "level": 5 },
+      { "name": "WPF", "level": 3 },
+      { "name": "Android", "level": 3 },
+      { "name": "jQuery", "level": 5 },
+      { "name": "SQL", "level": 4 },
+      { "name": "OpenGL/WebGL", "level": 5 },
+      { "name": "THREE.js", "level": 5 }
+    ],
+    "software": [
+      { "name": "vim", "level": 5 },
+      { "name": "git", "level": 5 },
+      { "name": "Linux", "level": 4 }
+    ]
+  },
+  "work": [
+    {
+      "position": "Unity Developer",
+      "company": "UCSD Qualcomm Institute",
+      "location": "La Jolla, California",
+      "date": "10/2018-Present",
+      "image": "QI",
+      "bullets": [
+        "Led a small team to build an iOS AR app for PricewaterhouseCoopers (PwC)'s Bodylogical software.",
+        "Designed three visualization modules in Unity (ARKit) that would present data in 3D space across different time frames, allowing the user to easily grasp the core functions of the software.",
+        "Implemented an XML-based localization system and a tutorial system from scratch so that PwC can demonstrate the app to non English speakers who might be new to AR."
+      ]
+    },
+    {
+      "position": "Intern Data Visualization Engineer",
+      "company": "Alibaba Inc.",
+      "location": "Hangzhou, China",
+      "date": "06/2019-08/2019",
+      "image": "Alibaba",
+      "bullets": [
+        "Constructed a Typescript-based backend 3D graph layout library to be integrated into Alibaba's internal tool chain, where I integrated force-directed layout and Sugiyama algorithm.",
+        "Developed a geographic model generation service featuring a Marching Square algorithm 100x more precise and more powerful than turf.js, that will be used in press conferences, including the Double 11 Festival.",
+        "Collaborated with a naked eye 3D project team to discover data visualization and HCI in Unity/WebGL, where I explored Entitas, a data-oriented framework similar to Redux, and wrote shaders for various effects."
+      ]
+    },
+    {
+      "position": "Intern Full Stack Developer",
+      "company": "LMT Technology",
+      "location": "Shanghai, China",
+      "date": "06/2018-08/2018",
+      "image": "LMT",
+      "bullets": [
+        "Refactored company's product from Flash to HTML/Javascript, and from a custom backend to Spring, reducing code length and boosting execution efficiency.",
+        "Pinpointed and addressed localization and responsive UI issues, making the product foreigner-friendly and improving user experience."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Exteractive",
+      "position": "Full Stack Developer",
+      "date": "07/2020-Present",
+      "link": "https://github.com/ALMSIVI/exteractive",
+      "hide": false,
+      "bullets": [
+        "An interactive story web app, with React as front end and Express as back end.",
+        "Constructed the React framework from scratch with Webpack and Babel, utilized Redux for global state management, and configured css-in-js for various UI components.",
+        "Implemented a user system with MongoDB where users can write stories, continue others' stories and rate their writing."
+      ]
+    },
+    {
+      "name": "MechSuit VR",
+      "position": "Unity Developer",
+      "date": "04/2017-06/2019",
+      "link": "https://github.com/TritonXR/Mechsuit-VR",
+      "hide": false,
+      "bullets": [
+        "Joined the school's Virtual Reality Club to work on a Unity fighting game featuring Steam VR and the HTC Vive device.",
+        "Implemented an inverse kinematic system using the positions of the VR headset and hand-held controllers, improving player experience and controls.",
+        "Programmed a propulsion system with player movements as input, enabling motion control for players, who would physically move to traverse instead of using the joystick.",
+        "Designed health and weapon systems, and UI for health and ammo display using MVC, writing scripts with Strategy Pattern so that they can be easily extended for various damage types and player resistances."
+      ]
+    },
+    {
+      "name": "Transracer",
+      "position": "Full Stack Developer",
+      "date": "04/2018-06/2018",
+      "link": "https://github.com/ALMSIVI/TransRacer",
+      "hide": false,
+      "bullets": [
+        "Worked in a 4-person team to create a web application with both front end (Bootstrap) and back end (Node.js) that allows user to learn different languages through translating lyrics.",
+        "Developed all the database logic with sqlite for songs and scores, so that users can upload their favorite songs to the app for practice, and view their past attempts.",
+        "Improved the scoring algorithm, taking various user inputs as account so they could have a better idea of their performance."
+      ]
+    },
+    {
+      "name": "Flashback Music",
+      "position": "Android Developer",
+      "date": "01/2018-03/2018",
+      "link": "https://github.com/ALMSIVI/FlashbackMusic",
+      "hide": true,
+      "bullets": [
+        "Worked in a 5-person, Agile team to create an Android music application that records the time and location songs are played so that users could reminisce on their moods.",
+        "Separated UI interaction and back end logic with Model-View-Controller pattern resulting in cleaner code.",
+        "Devised separate logic for local and cloud music under a set of interfaces with Strategy and Factory patterns."
+      ]
+    },
+    {
+      "name": "WayAround",
+      "position": "Front End Developer",
+      "date": "01/2018-03/2018",
+      "link": "https://github.com/ALMSIVI/wayaround",
+      "hide": true,
+      "bullets": [
+        "Worked in a 4-person team to create a web application mockup. The app allows users to customize their routes so as to enjoy the trip to the destination.",
+        "After paper prototypes, implemented the home page with Bootstrap, jQuery and Handlebars.js, where the users would customize the route. Wrote two versions of the page for A/B testing, analyzing the time each user used in navigating through the page to find out how users would approach a new product and modified to make the page user-friendly.",
+        "Perfected the review page, where the user rates the route based on their customization back on the home page."
+      ]
+    }
+  ]
+}

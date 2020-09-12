@@ -4,92 +4,87 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 \thispagestyle{empty}
-\setlist[itemize]{leftmargin=*, before=\vspace{-0.5\baselineskip}, after=\vspace{-\baselineskip}, nosep}
-\newcommand{\itemcols}[1]{
-\multicolumn{2}{p{\dimexpr \linewidth-2\tabcolsep}}{
-\begin{itemize}
-#1
-\end{itemize}
-}
-}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=2pt, parsep=1pt}
+\setlength \parindent {0pt}
 \begin{document}
-\noindent
-\begin{tabularx}{\linewidth}{X r}
-\multirow{5}{*}{{\fontsize{50}{60}\selectfont Yue Wu}}
-& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
-& (858) 666-5847 \\
-& \href{https://almsivi.github.io}{https://almsivi.github.io} \\
-& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI} \\
-& \href{https://www.linkedin.com/in/yue-wu-aaab2213b/}{https://www.linkedin.com/in/yue-wu-aaab2213b/}
-\end{tabularx}
-\noindent
-\textbf{I am currently looking for Software Engineer internship opportunities for Summer 2021.}
-\section{Education}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{X r}
-\textbf{\large University of California, San Diego} & \texttt{09/2016-12/2021} \\
-\itemcols{
-\item B.S. and M.S. in Computer Science \textbf{(GPA: 3.92/4)}
-\item Courses Taken: Data Structures, Algorithms, Software Engineering, HCI Design, Computer Graphics, Operating Systems, Programming Languages, Compilers, Deep Learning, Network, Databases
-}
-\end{tabularx}
-\section{Skills}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{l X}
-\texttt{Language} & C\#, Java, Javascript/Typescript, HTML, CSS, C/C++, Python, \LaTeX, Shader (GLSL/HLSL) \\
-\texttt{Framework} & Unity, SteamVR, WPF, Android, jQuery, Node.js, SQL, OpenGL/WebGL, React.js, THREE.js \\
-\texttt{Software} & vim, git, Linux
-\end{tabularx}
-\section{Work Experience}
-\smallskip
-\noindent
-\begin{tabularx}{\textwidth}{X r}
-\textbf{\large Unity Developer}, UCSD Qualcomm Institute, La Jolla, California & \texttt{10/2018-Present} \\
-\itemcols{
-\item Built an iOS AR app for PricewaterhouseCoopers (PwC)'s Bodylogical software.
-\item Designed three visualization modules in Unity (ARKit) that would allow data to be presented in 3D space across different time frames, allowing the user to easily grasp the core functions of the simulator.
-\item Implemented an XML-based localization system and a tutorial system from scratch so that PwC can demonstrate the app to non English speakers who might be new to AR.
-} \\
-\textbf{\large Intern Data Visualization Engineer}, Alibaba Inc., Hangzhou, China & \texttt{06/2019-08/2019} \\
-\itemcols{
-\item Constructed a backend graph layout library for 3D graph visualization to replace turf.js, where I integrated force-directed layout and Sugiyama algorithm in Typescript.
-\item Developed a geographic model generation service featuring a Marching Square algorithm 100x more precise and more powerful than turf.js, that will be used in press conferences, including the Double 11 Festival.
-\item Collaborated with a naked eye 3D project team to discover data visualization and HCI in Unity/WebGL, where I explored Entitas, a data-oriented framework similar to Redux, and wrote shaders for various effects.
-} \\
-\textbf{\large Intern Full Stack Developer}, LMT Technology, Shanghai, China & \texttt{06/2018-08/2018} \\
-\itemcols{
-\item Refactored company's product from Flash to HTML/Javascript, and from a custom backend to Spring, reducing code length and boosting execution efficiency.
-\item Pinpointed and addressed localization and responsive UI issues, making the product foreigner-friendly and improving user experience.
-\item Introduced JSDoc, a documentation format for Javascript, to the team, setting up a uniform code format.
-} \\
-\end{tabularx}
-\section{Selected Projects}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{X r}
-\textbf{\large Exteractive}, Full Stack Developer & \texttt{07/2020-Present} \\
-\itemcols{
-\item An interactive story web app, with React as front end and Express as back end.
-\item Implemented a user system with MongoDB where users can write stories, continue others' stories and rate their writing.
-\item Achieved responsive UI through React and Emotion, a CSS-in-JS framework.
-} \\
+	\begin{tabularx}{\linewidth}{X r}
+		\multirow{5}{*}{{\fontsize{50}{60}\selectfont Yue Wu}}
+		& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
+		& (858) 666-5847 \\
+		& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI} \\
+		& \href{https://www.linkedin.com/in/yue-wu-aaab2213b/}{https://www.linkedin.com/in/yue-wu-aaab2213b/}
+	\end{tabularx}
+	\textbf{I am currently looking for Software Engineer internship opportunities for Summer 2021.}
+	\section{Education}
+	\smallskip
+	\textbf{\large University of California, San Diego}
+	\begin{itemize}
+		\item B.S. in Computer Science, graduated with university latin honors \textbf{(GPA: 3.92/4)} \hfill \texttt{09/2016-06/2020}
+		\item M.S. in Computer Science \hfill \texttt{09/2020-12/2021}
+	\end{itemize}
+	\section{Skills}
+	\smallskip
+	\begin{tabularx}{\linewidth}{l X}
+		\texttt{Language} & C\#, Java, Javascript/Typescript, HTML, CSS, C/C++, Python, \LaTeX, Shader (GLSL/HLSL) \\
+		\texttt{Framework} & Unity, React, Redux, Node, Express, MongoDB, WPF, Android, jQuery, SQL, OpenGL/WebGL, THREE.js \\
+		\texttt{Software} & vim, git, Linux
+	\end{tabularx}
+	\section{Work Experience}
+	\smallskip
+	\textbf{\large Unity Developer}, UCSD Qualcomm Institute, \textit{La Jolla, California} \hfill \texttt{10/2018-Present}
+	\begin{itemize}
+		\item Led a small team to build an iOS AR app for PricewaterhouseCoopers (PwC)'s Bodylogical software.
 
-\textbf{\large MechSuit VR}, Unity Developer & \texttt{04/2017-06/2019} \\
-\itemcols{
-\item Joined the school's Virtual Reality Club to work on a Unity fighting game featuring Steam VR (Vive).
-\item Implemented the inverse kinematic system for the armor using the positions of the VR headset and hand-held controllers, which boosted player control efficiency.
-\item Programmed a propulsion system with player movements as input, enabling motion control for players, who would physically move to traverse through the arena instead of using the joystick.
-\item Designed health and weapon systems, and UI for health and ammo display using MVC, writing scripts with Strategy Pattern so that they can be easily extended for various damage types and player resistances.
-} \\
+		\item Designed three visualization modules in Unity (ARKit) that would present data in 3D space across different time frames, allowing the user to easily grasp the core functions of the software.
 
-\textbf{\large Transracer}, Full Stack Developer & \texttt{04/2018-06/2018} \\
-\itemcols{
-\item Worked in a 4-person team to create a web application with both front end (Bootstrap) and back end (Node.js) that allows user to learn different languages through translating lyrics.
-\item Developed all the database logic with sqlite for songs and scores, so that users can upload their favorite songs to the app for practice, and view their past attempts.
-\item Improved score calculation based on the number of hints the user relies on and the correctness of the answer.
-} \\
+		\item Implemented an XML-based localization system and a tutorial system from scratch so that PwC can demonstrate the app to non English speakers who might be new to AR.
 
-\end{tabularx}
+	\end{itemize}
+	\textbf{\large Intern Data Visualization Engineer}, Alibaba Inc., \textit{Hangzhou, China} \hfill \texttt{06/2019-08/2019}
+	\begin{itemize}
+		\item Constructed a Typescript-based backend 3D graph layout library to be integrated into Alibaba's internal tool chain, where I integrated force-directed layout and Sugiyama algorithm.
+
+		\item Developed a geographic model generation service featuring a Marching Square algorithm 100x more precise and more powerful than turf.js, that will be used in press conferences, including the Double 11 Festival.
+
+		\item Collaborated with a naked eye 3D project team to discover data visualization and HCI in Unity/WebGL, where I explored Entitas, a data-oriented framework similar to Redux, and wrote shaders for various effects.
+
+	\end{itemize}
+	\textbf{\large Intern Full Stack Developer}, LMT Technology, \textit{Shanghai, China} \hfill \texttt{06/2018-08/2018}
+	\begin{itemize}
+		\item Refactored company's product from Flash to HTML/Javascript, and from a custom backend to Spring, reducing code length and boosting execution efficiency.
+
+		\item Pinpointed and addressed localization and responsive UI issues, making the product foreigner-friendly and improving user experience.
+
+	\end{itemize}
+	\section{Selected Projects}
+	\smallskip
+	\textbf{\large Exteractive}, Full Stack Developer \hfill \texttt{07/2020-Present}
+	\begin{itemize}
+		\item An interactive story web app, with React as front end and Express as back end.
+
+		\item Constructed the React framework from scratch with Webpack and Babel, utilized Redux for global state management, and configured css-in-js for various UI components.
+
+		\item Implemented a user system with MongoDB where users can write stories, continue others' stories and rate their writing.
+
+	\end{itemize}
+	\textbf{\large MechSuit VR}, Unity Developer \hfill \texttt{04/2017-06/2019}
+	\begin{itemize}
+		\item Joined the school's Virtual Reality Club to work on a Unity fighting game featuring Steam VR and the HTC Vive device.
+
+		\item Implemented an inverse kinematic system using the positions of the VR headset and hand-held controllers, improving player experience and controls.
+
+		\item Programmed a propulsion system with player movements as input, enabling motion control for players, who would physically move to traverse instead of using the joystick.
+
+		\item Designed health and weapon systems, and UI for health and ammo display using MVC, writing scripts with Strategy Pattern so that they can be easily extended for various damage types and player resistances.
+
+	\end{itemize}
+	\textbf{\large Transracer}, Full Stack Developer \hfill \texttt{04/2018-06/2018}
+	\begin{itemize}
+		\item Worked in a 4-person team to create a web application with both front end (Bootstrap) and back end (Node.js) that allows user to learn different languages through translating lyrics.
+
+		\item Developed all the database logic with sqlite for songs and scores, so that users can upload their favorite songs to the app for practice, and view their past attempts.
+
+		\item Improved the scoring algorithm, taking various user inputs as account so they could have a better idea of their performance.
+
+	\end{itemize}
 \end{document}
