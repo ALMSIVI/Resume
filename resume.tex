@@ -1,4 +1,5 @@
 \documentclass[10pt, letterpaper]{article}
+\usepackage[T1]{fontenc}
 \usepackage[letterpaper, margin=0.5in]{geometry}
 \usepackage{anyfontsize, tabularx, multirow, hyperref, titlesec, comment, enumitem}
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
@@ -12,9 +13,8 @@
 		& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
 		& (858) 666-5847 \\
 		& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI} \\
-		& \href{https://www.linkedin.com/in/yue-wu-aaab2213b/}{https://www.linkedin.com/in/yue-wu-aaab2213b/}
+		& \href{https://www.linkedin.com/in/yuewu-almsivi}{https://www.linkedin.com/in/yuewu-almsivi}
 	\end{tabularx}
-	\textbf{I am currently looking for Software Engineer internship opportunities for Summer 2021.}
 	\section{Education}
 	\smallskip
 	\textbf{\large University of California, San Diego}
@@ -25,66 +25,66 @@
 	\section{Skills}
 	\smallskip
 	\begin{tabularx}{\linewidth}{l X}
-		\texttt{Language} & C\#, Java, Javascript/Typescript, HTML, CSS, C/C++, Python, \LaTeX, Shader (GLSL/HLSL) \\
+		\texttt{Language} & C\#, Javascript/Typescript, Java, HTML, CSS, C/C++, Python, \LaTeX, Shader (GLSL/HLSL) \\
 		\texttt{Framework} & Unity, React, Redux, Node, Express, MongoDB, WPF, Android, jQuery, SQL, OpenGL/WebGL, THREE.js \\
 		\texttt{Software} & vim, git, Linux
 	\end{tabularx}
 	\section{Work Experience}
 	\smallskip
+	\textbf{\large Research Assistant}, UC San Diego Health, \textit{San Diego, California} \hfill \texttt{10/2020-Present}
+	\begin{itemize}
+		\item Helped on a research project about Schizophrenia by putting patients under VR scenarios and studying their brain activities.
+
+		\item Optimized the existing VR application to satisfy timing and measurement constraints, reducing audio lag from >100ms with a high variability to a consistent 35ms latency.
+
+		\item Created new VR scenarios and added audio paradigms, allowing for more comprehensive tests and better data.
+
+	\end{itemize}
 	\textbf{\large Unity Developer}, UCSD Qualcomm Institute, \textit{La Jolla, California} \hfill \texttt{10/2018-Present}
 	\begin{itemize}
 		\item Led a small team to build an iOS AR app for PricewaterhouseCoopers (PwC)'s Bodylogical software.
 
-		\item Designed three visualization modules in Unity (ARKit) that would present data in 3D space across different time frames, allowing the user to easily grasp the core functions of the software.
+		\item Designed three visualization modules in Unity (AR Foundation) that would present data in 3D space across different time frames, allowing the user to easily grasp the core functions of the software.
 
 		\item Implemented an XML-based localization system and a tutorial system from scratch so that PwC can demonstrate the app to non English speakers who might be new to AR.
 
 	\end{itemize}
 	\textbf{\large Intern Data Visualization Engineer}, Alibaba Inc., \textit{Hangzhou, China} \hfill \texttt{06/2019-08/2019}
 	\begin{itemize}
-		\item Constructed a Typescript-based backend 3D graph layout library to be integrated into Alibaba's internal tool chain, where I integrated force-directed layout and Sugiyama algorithm.
+		\item Constructed a Typescript-based backend 3D graph layout library to be integrated into Alibaba's internal tool chain, where I incorporated force-directed layout and Sugiyama algorithm.
 
-		\item Developed a geographic model generation service featuring a Marching Square algorithm 100x more precise and more powerful than turf.js, that will be used in press conferences, including the Double 11 Festival.
+		\item Developed a geographic model generation service featuring a Marching Square algorithm 100x more precise than turf.js, to be deployed for press conferences and exhibitions.
 
-		\item Collaborated with a naked eye 3D project team to discover data visualization and HCI in Unity/WebGL, where I explored Entitas, a data-oriented framework similar to Redux, and wrote shaders for various effects.
+		\item Collaborated with a naked eye 3D project team to discover data visualization and human-computer interaction in Unity and WebGL, where I refactored the code in a data-oriented manner to boost performance with large amounts of data.
 
 	\end{itemize}
 	\textbf{\large Intern Full Stack Developer}, LMT Technology, \textit{Shanghai, China} \hfill \texttt{06/2018-08/2018}
 	\begin{itemize}
-		\item Refactored company's product from Flash to HTML/Javascript, and from a custom backend to Spring, reducing code length and boosting execution efficiency.
+		\item Refactored company's product from Flash to HTML/Javascript, and from a custom backend to Spring, reducing code length and improving execution efficiency.
 
-		\item Pinpointed and addressed localization and responsive UI issues, making the product foreigner-friendly and improving user experience.
+		\item Pinpointed and addressed problems in localization and responsive UI, making the product more user-friendly under different screen sizes and languages.
 
 	\end{itemize}
 	\section{Selected Projects}
 	\smallskip
-	\textbf{\large Exteractive}, Full Stack Developer \hfill \texttt{07/2020-Present}
+	\textbf{\large Exteractive}, Full Stack Developer \hfill \texttt{07/2020-10/2020}
 	\begin{itemize}
-		\item An interactive story web app, with React as front end and Express as back end.
+		\item Developed an interactive story web app, with React as front end, Express as back end, and MongoDB as the database.
 
-		\item Constructed the React framework from scratch with Webpack and Babel, utilized Redux for global state management, and configured css-in-js for various UI components.
+		\item Constructed the React framework from scratch with Webpack and Babel, and set up jest to test each component.
 
-		\item Implemented a user system with MongoDB where users can write stories, continue others' stories and rate their writing.
+		\item Separated routes, controllers and database objects, decoupling the code and making the infrastructure easily extensible.
 
 	\end{itemize}
 	\textbf{\large MechSuit VR}, Unity Developer \hfill \texttt{04/2017-06/2019}
 	\begin{itemize}
-		\item Joined the school's Virtual Reality Club to work on a Unity fighting game featuring Steam VR and the HTC Vive device.
+		\item Joined the school's Virtual Reality Club to work on a Unity fighting game featuring Steam VR and the HTC Vive headset.
 
-		\item Implemented an inverse kinematic system using the positions of the VR headset and hand-held controllers, improving player experience and controls.
+		\item Implemented an inverse kinematic system for the player using the positions of the VR headset and hand-held controllers, employing several heuristics to improve player experience and controls.
 
 		\item Programmed a propulsion system with player movements as input, enabling motion control for players, who would physically move to traverse instead of using the joystick.
 
 		\item Designed health and weapon systems, and UI for health and ammo display using MVC, writing scripts with Strategy Pattern so that they can be easily extended for various damage types and player resistances.
-
-	\end{itemize}
-	\textbf{\large Transracer}, Full Stack Developer \hfill \texttt{04/2018-06/2018}
-	\begin{itemize}
-		\item Worked in a 4-person team to create a web application with both front end (Bootstrap) and back end (Node.js) that allows user to learn different languages through translating lyrics.
-
-		\item Developed all the database logic with sqlite for songs and scores, so that users can upload their favorite songs to the app for practice, and view their past attempts.
-
-		\item Improved the scoring algorithm, taking various user inputs as account so they could have a better idea of their performance.
 
 	\end{itemize}
 \end{document}

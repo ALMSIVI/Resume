@@ -5,11 +5,11 @@
     "phone": "(858) 666-5847",
     "website": "https://almsivi.github.io",
     "github": "https://github.com/ALMSIVI",
-    "linkedin": "https://www.linkedin.com/in/yue-wu-aaab2213b/"
+    "linkedin": "https://www.linkedin.com/in/yuewu-almsivi"
   },
   "comments": {
     "position": "I am currently looking for Software Engineer internship opportunities for Summer 2021.",
-    "include": true
+    "include": false
   },
   "education": {
     "name": "University of California, San Diego",
@@ -35,8 +35,8 @@
   "skills": {
     "language": [
       { "name": "C#", "level": 5 },
-      { "name": "Java", "level": 5 },
       { "name": "Javascript/Typescript", "level": 5 },
+      { "name": "Java", "level": 5 },
       { "name": "HTML", "level": 5 },
       { "name": "CSS", "level": 4 },
       { "name": "C/C++", "level": 4 },
@@ -66,6 +66,18 @@
   },
   "work": [
     {
+      "position": "Research Assistant",
+      "company": "UC San Diego Health",
+      "location": "San Diego, California",
+      "date": "10/2020-Present",
+      "image": "UCSDHealth",
+      "bullets": [
+        "Helped on a research project about Schizophrenia by putting patients under VR scenarios and studying their brain activities.",
+        "Optimized the existing VR application to satisfy timing and measurement constraints, reducing audio lag from >100ms with a high variability to a consistent 35ms latency.",
+        "Created new VR scenarios and added audio paradigms, allowing for more comprehensive tests and better data."
+      ]
+    },
+    {
       "position": "Unity Developer",
       "company": "UCSD Qualcomm Institute",
       "location": "La Jolla, California",
@@ -73,7 +85,7 @@
       "image": "QI",
       "bullets": [
         "Led a small team to build an iOS AR app for PricewaterhouseCoopers (PwC)'s Bodylogical software.",
-        "Designed three visualization modules in Unity (ARKit) that would present data in 3D space across different time frames, allowing the user to easily grasp the core functions of the software.",
+        "Designed three visualization modules in Unity (AR Foundation) that would present data in 3D space across different time frames, allowing the user to easily grasp the core functions of the software.",
         "Implemented an XML-based localization system and a tutorial system from scratch so that PwC can demonstrate the app to non English speakers who might be new to AR."
       ]
     },
@@ -84,9 +96,9 @@
       "date": "06/2019-08/2019",
       "image": "Alibaba",
       "bullets": [
-        "Constructed a Typescript-based backend 3D graph layout library to be integrated into Alibaba's internal tool chain, where I integrated force-directed layout and Sugiyama algorithm.",
-        "Developed a geographic model generation service featuring a Marching Square algorithm 100x more precise and more powerful than turf.js, that will be used in press conferences, including the Double 11 Festival.",
-        "Collaborated with a naked eye 3D project team to discover data visualization and HCI in Unity/WebGL, where I explored Entitas, a data-oriented framework similar to Redux, and wrote shaders for various effects."
+        "Constructed a Typescript-based backend 3D graph layout library to be integrated into Alibaba's internal tool chain, where I incorporated force-directed layout and Sugiyama algorithm.",
+        "Developed a geographic model generation service featuring a Marching Square algorithm 100x more precise than turf.js, to be deployed for press conferences and exhibitions.",
+        "Collaborated with a naked eye 3D project team to discover data visualization and human-computer interaction in Unity and WebGL, where I refactored the code in a data-oriented manner to boost performance with large amounts of data."
       ]
     },
     {
@@ -96,8 +108,8 @@
       "date": "06/2018-08/2018",
       "image": "LMT",
       "bullets": [
-        "Refactored company's product from Flash to HTML/Javascript, and from a custom backend to Spring, reducing code length and boosting execution efficiency.",
-        "Pinpointed and addressed localization and responsive UI issues, making the product foreigner-friendly and improving user experience."
+        "Refactored company's product from Flash to HTML/Javascript, and from a custom backend to Spring, reducing code length and improving execution efficiency.",
+        "Pinpointed and addressed problems in localization and responsive UI, making the product more user-friendly under different screen sizes and languages."
       ]
     }
   ],
@@ -105,13 +117,13 @@
     {
       "name": "Exteractive",
       "position": "Full Stack Developer",
-      "date": "07/2020-Present",
+      "date": "07/2020-10/2020",
       "link": "https://github.com/ALMSIVI/exteractive",
       "hide": false,
       "bullets": [
-        "An interactive story web app, with React as front end and Express as back end.",
-        "Constructed the React framework from scratch with Webpack and Babel, utilized Redux for global state management, and configured css-in-js for various UI components.",
-        "Implemented a user system with MongoDB where users can write stories, continue others' stories and rate their writing."
+        "Developed an interactive story web app, with React as front end, Express as back end, and MongoDB as the database.",
+        "Constructed the React framework from scratch with Webpack and Babel, and set up jest to test each component.",
+        "Separated routes, controllers and database objects, decoupling the code and making the infrastructure easily extensible."
       ]
     },
     {
@@ -121,8 +133,8 @@
       "link": "https://github.com/TritonXR/Mechsuit-VR",
       "hide": false,
       "bullets": [
-        "Joined the school's Virtual Reality Club to work on a Unity fighting game featuring Steam VR and the HTC Vive device.",
-        "Implemented an inverse kinematic system using the positions of the VR headset and hand-held controllers, improving player experience and controls.",
+        "Joined the school's Virtual Reality Club to work on a Unity fighting game featuring Steam VR and the HTC Vive headset.",
+        "Implemented an inverse kinematic system for the player using the positions of the VR headset and hand-held controllers, employing several heuristics to improve player experience and controls.",
         "Programmed a propulsion system with player movements as input, enabling motion control for players, who would physically move to traverse instead of using the joystick.",
         "Designed health and weapon systems, and UI for health and ammo display using MVC, writing scripts with Strategy Pattern so that they can be easily extended for various damage types and player resistances."
       ]
@@ -132,11 +144,11 @@
       "position": "Full Stack Developer",
       "date": "04/2018-06/2018",
       "link": "https://github.com/ALMSIVI/TransRacer",
-      "hide": false,
+      "hide": true,
       "bullets": [
-        "Worked in a 4-person team to create a web application with both front end (Bootstrap) and back end (Node.js) that allows user to learn different languages through translating lyrics.",
-        "Developed all the database logic with sqlite for songs and scores, so that users can upload their favorite songs to the app for practice, and view their past attempts.",
-        "Improved the scoring algorithm, taking various user inputs as account so they could have a better idea of their performance."
+        "Worked in a 4-person team to create a web application for learning languages, built with Bootstrap and jQuery as front end and Express as back end.",
+        "Developed all the database logic with sqlite, so that users can upload custom contents to the server for practice, and review their past attempts.",
+        "Improved the scoring algorithm, taking multiple user inputs into account so they could have a more precise idea of their performance."
       ]
     },
     {
@@ -147,8 +159,8 @@
       "hide": true,
       "bullets": [
         "Worked in a 5-person, Agile team to create an Android music application that records the time and location songs are played so that users could reminisce on their moods.",
-        "Separated UI interaction and back end logic with Model-View-Controller pattern resulting in cleaner code.",
-        "Devised separate logic for local and cloud music under a set of interfaces with Strategy and Factory patterns."
+        "Separated UI interaction and back end logic with Model-View-Controller, resulting in cleaner, more flexible code.",
+        "Devised separate logic for local and cloud music under a unified set of interfaces with Strategy and Factory patterns."
       ]
     },
     {
@@ -158,9 +170,9 @@
       "link": "https://github.com/ALMSIVI/wayaround",
       "hide": true,
       "bullets": [
-        "Worked in a 4-person team to create a web application mockup. The app allows users to customize their routes so as to enjoy the trip to the destination.",
-        "After paper prototypes, implemented the home page with Bootstrap, jQuery and Handlebars.js, where the users would customize the route. Wrote two versions of the page for A/B testing, analyzing the time each user used in navigating through the page to find out how users would approach a new product and modified to make the page user-friendly.",
-        "Perfected the review page, where the user rates the route based on their customization back on the home page."
+        "Worked in a 4-person team to create a web application mockup, with a fully functional front end with Bootstrap and jQuery.",
+        "After paper prototypes, implemented two versions of the home page and conducted A/B testing, analyzing the navigation time to research user behavior and modifying accordingly to make the page user-friendly.",
+        "Perfected the review page, utilizing Javascript and CSS effects for component animations."
       ]
     }
   ]
