@@ -59,7 +59,8 @@ with open(args.output, 'wt') as out:
         .replace('%bsgpa', section['bsgpa']) \
         .replace('%bs', section['bs']) \
         .replace('%msdate', section['msdate']) \
-        .replace('%ms', section['ms']) 
+        .replace('%msgpa', section['msgpa']) \
+        .replace('%ms', section['ms'])
         
     out.write(text)
 

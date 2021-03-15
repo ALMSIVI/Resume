@@ -1,91 +1,92 @@
-\documentclass[UTF8]{ctexart}
-\usepackage[a4paper, margin=0.5in]{geometry}
+\documentclass[10pt, letterpaper]{ctexart}
+\usepackage[T1]{fontenc}
+\usepackage[letterpaper, margin=0.5in]{geometry}
 \usepackage{anyfontsize, tabularx, multirow, hyperref, titlesec, comment, enumitem}
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 \thispagestyle{empty}
-\setlist[itemize]{leftmargin=*, before=\vspace{-0.5\baselineskip}, after=\vspace{-\baselineskip}, nosep}
-\newcommand{\itemcols}[1]{
-\multicolumn{2}{p{\dimexpr \linewidth-2\tabcolsep}}{
-\begin{itemize}
-#1
-\end{itemize}
-}
-}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=2pt, parsep=1pt}
+\setlength \parindent {0pt}
 \begin{document}
-\noindent
-\begin{tabularx}{\linewidth}{X r}
-\multirow{4}{*}{{\fontsize{50}{60}\selectfont 吴越}}
-& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
-& (+1) (858) 666-5847 \\
-& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI} \\
-& \href{https://www.linkedin.com/in/yue-wu-aaab2213b/}{https://www.linkedin.com/in/yue-wu-aaab2213b/}
-\end{tabularx}
-\section{教育经历}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{X r}
-\textbf{\large 加州大学圣地亚哥分校} & \texttt{2016/09-2021/12} \\
-\itemcols{
-\item 专业：计算机科学（B.S.与 M.S.） \textbf{(GPA: 3.92/4)}
-}
-\end{tabularx}
-\section{技能}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{l X}
-\texttt{语言} & C\#, Java, Javascript/Typescript, HTML, CSS, C/C++, Python, \LaTeX, Shader (GLSL/HLSL) \\
-\texttt{框架} & Unity, SteamVR, WPF, Android, jQuery, Node.js, SQL, OpenGL/WebGL, React.js, THREE.js \\
-\texttt{软件} & vim, git, Linux
-\end{tabularx}
-\section{工作经验}
-\smallskip
-\noindent
-\begin{tabularx}{\textwidth}{X r}
-\textbf{\large Unity开发者}, UCSD Qualcomm Institute, 加州拉霍亚 & \texttt{2018/10至今} \\
-\itemcols{
-\item 为美国普华永道的Bodylogical系统开发iOS AR应用。
-\item 在Unity中设计并实现了3套不同的可视化模组，数据以时间排列，分布在3维空间中，用户可以方便地理解Body logical的核心功能。
-\item 从头编写了一套基于XML的本地化系统与教程系统，使得非美国客户及对AR不熟悉的客户可以轻松上手。
-} \\
-\textbf{\large 实习前端工程师}, 阿里巴巴集团, 中国杭州 & \texttt{2019/06-2019/08} \\
-\itemcols{
-\item 基于力导向图原理和Sugiyama算法，用Typescript搭建对图类结构进行3D可视化的库，以替换turf.js。
-\item 基于Marching Square算法开发了一套地理模型生成服务，比turf.js自带算法精确100倍，并用于阿里9号馆及双11等数据大屏展示中。
-\item 与达摩院的裸眼3D团队合作，研究3维空间下基于Unity/WebGL的人机交互和数据可视化。探索了Entitas框架并编写Shader实现多样的视觉效果。
-} \\
-\textbf{\large 实习全栈工程师}, 莱曼特信息科技, 中国上海 & \texttt{2018/06-2018/08} \\
-\itemcols{
-\item 参加软件的改版，从Flash迁移至HTML5。减少代码量，加快运行速度。
-\item 完善产品的本地化与响应式UI界面，使其对外国用户更加友好，提升用户体验。
-\item 引入JSDoc，对Javascript进行规范，在公司内建立统一的代码风格。
-} \\
-\end{tabularx}
-\section{项目经历}
-\smallskip
-\noindent
-\begin{tabularx}{\linewidth}{X r}
-\textbf{\large Exteractive}, 全栈工程师 & \texttt{2020/07至今} \\
-\itemcols{
-\item 交互小说类型的网页应用，以React作为前端，Express作为后端。
-\item 使用MongoDB作为数据库开发了用户系统，用户可以编写故事，续写其他人的故事并对其做出评价。
-\item 利用React和Emotion等库实现了响应式UI及本地化。
-} \\
+	\begin{tabularx}{\linewidth}{X r}
+		\multirow{5}{*}{{\fontsize{50}{60}\selectfont 吴越}}
+		& \href{mailto:yuw264@ucsd.edu}{yuw264@ucsd.edu} \\
+		& (+1) (858) 666-5847 \\
+		& \href{https://github.com/ALMSIVI}{https://github.com/ALMSIVI} \\
+		& \href{https://www.linkedin.com/in/yuewu-almsivi}{https://www.linkedin.com/in/yuewu-almsivi}
+	\end{tabularx}
+	\section{教育经历}
+	\smallskip
+	\textbf{\large 加州大学圣地亚哥分校}
+	\begin{itemize}
+		\item 专业：计算机科学（B.S） \textbf{(GPA: 3.92/4)} \hfill \texttt{2016/09-2020/06}
+		\item 专业：计算机科学（M.S.） \textbf{(GPA: 4/4)} \hfill \texttt{2020/09-2021/12}
+	\end{itemize}
+	\section{技能}
+	\smallskip
+	\begin{tabularx}{\linewidth}{l X}
+		\texttt{语言} & C\#, Java, Javascript/Typescript, HTML, CSS, C/C++, Python, \LaTeX, Shader (GLSL/HLSL) \\
+		\texttt{框架} & Unity, SteamVR, WPF, Android, jQuery, Node.js, SQL, OpenGL/WebGL, React.js, THREE.js \\
+		\texttt{软件} & vim, git, Linux
+	\end{tabularx}
+	\section{工作经验}
+	\smallskip
+	\textbf{\large 研究助理}, UCSD校医院, \textit{加州圣地亚哥} \hfill \texttt{2020/10至今}
+	\begin{itemize}
+		\item 进行关于精神分裂症的研究项目，将患者置于VR环境之下，研究其大脑活动。
 
-\textbf{\large MechSuit VR}, Unity开发者 & \texttt{2017/04-2019/06} \\
-\itemcols{
-\item 学校虚拟现实俱乐部的小组项目，使用Steam VR和Unity开发基于HTC Vive设备的VR游戏。
-\item 实现逆运动学系统，通过VR眼镜和手柄的位置来控制机甲手臂的位置，增加代入感和玩家控制机甲的效率。
-\item 编写动力系统，以玩家在物理空间中的移动作为输入，对虚拟空间中的机甲带来推力，玩家无需使用手柄来移动机甲，这种操纵方式给予玩家身临其境之感。
-\item 设计了生命值系统与武器系统，并使用MVC模型设计了生命值与弹药显示的UI。利用策略模式等设计模式，编写脚本使得开发人员能迅速增加其他伤害类型与机甲抗性。
-} \\
+		\item 优化已有的VR应用以满足时间和测量的要求，将音频延迟从高于100ms降低至稳定的35ms。
 
-\textbf{\large Transracer}, 全栈工程师 & \texttt{2018/04-2018/06} \\
-\itemcols{
-\item 4人小组项目，共同开发网页app，前端使用Bootstrap，后端使用Node.js。用户通过翻译歌词来学习外语。
-\item 使用sqlite编写所有数据库逻辑，数据库用于存储歌曲与用户得分，用户可将喜欢的歌曲上传到网站以练习。
-\item 改善了计算得分逻辑：app会基于用户使用提示的数量及回答的正确率来计算用户得分，使得分更为准确。
-} \\
+		\item 创建新的VR场景，增加音频样式，使得研究员可以进行更加详细的测试，获取更好的数据。
 
-\end{tabularx}
+	\end{itemize}
+	\textbf{\large Unity开发者}, UCSD Qualcomm Institute, \textit{加州拉霍亚} \hfill \texttt{2018/10至今}
+	\begin{itemize}
+		\item 为美国普华永道的Bodylogical系统开发iOS AR应用。
+
+		\item 在Unity中设计并实现了3套不同的可视化模组，数据以时间排列，分布在3维空间中，用户可以方便地理解Body logical的核心功能。
+
+		\item 从头编写了一套基于XML的本地化系统与教程系统，使得非美国客户及对AR不熟悉的客户可以轻松上手。
+
+	\end{itemize}
+	\textbf{\large 实习前端工程师}, 阿里巴巴集团, \textit{中国杭州} \hfill \texttt{2019/06-2019/08}
+	\begin{itemize}
+		\item 基于力导向图原理和Sugiyama算法，用Typescript搭建对图类结构进行3D可视化的库，以替换turf.js。
+
+		\item 基于Marching Square算法开发了一套地理模型生成服务，比turf.js自带算法精确100倍，并用于阿里9号馆及双11等数据大屏展示中。
+
+		\item 与达摩院的裸眼3D团队合作，研究3维空间下基于Unity/WebGL的人机交互和数据可视化。探索了Entitas框架并编写Shader实现多样的视觉效果。
+
+	\end{itemize}
+	\textbf{\large 实习全栈工程师}, 莱曼特信息科技, \textit{中国上海} \hfill \texttt{2018/06-2018/08}
+	\begin{itemize}
+		\item 参加软件的改版，从Flash迁移至HTML5。减少代码量，加快运行速度。
+
+		\item 完善产品的本地化与响应式UI界面，使其对外国用户更加友好，提升用户体验。
+
+		\item 引入JSDoc，对Javascript进行规范，在公司内建立统一的代码风格。
+
+	\end{itemize}
+	\section{项目经历}
+	\smallskip
+	\textbf{\large Exteractive}, 全栈工程师 \hfill \texttt{2020/07-2020/10}
+	\begin{itemize}
+		\item 交互小说类型的网页应用，以React作为前端，Express作为后端。
+
+		\item 使用MongoDB作为数据库开发了用户系统，用户可以编写故事，续写其他人的故事并对其做出评价。
+
+		\item 利用React和Emotion等库实现了响应式UI及本地化。
+
+	\end{itemize}
+	\textbf{\large MechSuit VR}, Unity开发者 \hfill \texttt{2017/04-2019/06}
+	\begin{itemize}
+		\item 学校虚拟现实俱乐部的小组项目，使用Steam VR和Unity开发基于HTC Vive设备的VR游戏。
+
+		\item 实现逆运动学系统，通过VR眼镜和手柄的位置来控制机甲手臂的位置，增加代入感和玩家控制机甲的效率。
+
+		\item 编写动力系统，以玩家在物理空间中的移动作为输入，对虚拟空间中的机甲带来推力，玩家无需使用手柄来移动机甲，这种操纵方式给予玩家身临其境之感。
+
+		\item 设计了生命值系统与武器系统，并使用MVC模型设计了生命值与弹药显示的UI。利用策略模式等设计模式，编写脚本使得开发人员能迅速增加其他伤害类型与机甲抗性。
+
+	\end{itemize}
 \end{document}
